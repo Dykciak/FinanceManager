@@ -23,11 +23,11 @@
 		</header>
 		<main>
 			<section class="transactions">
-				<h2 class="title">list of transactions</h2>
+				<h2 class="title">List of transactions</h2>
 				<div class="transaction-list">
 					<div class="income-area">
 						<h3>Income:</h3>
-						<div class="transaction" id="0">
+						<!-- <div class="transaction" id="0">
 							<p class="transaction-name">
 								<i class="fas fa-money-bill-wave"></i> Payment
 							</p>
@@ -35,46 +35,10 @@
 								$2000
 								<button class="delete"><i class="fas fa-times"></i></button>
 							</p>
-						</div>
+						</div> -->
 					</div>
 					<div class="expenses-area">
 						<h3>Expenses:</h3>
-						<div class="transaction" id="1">
-							<p class="transaction-name">
-								<i class="fas fa-cart-arrow-down"></i> Shopping
-							</p>
-							<p class="transaction-amount">
-								-$50
-								<button class="delete"><i class="fas fa-times"></i></button>
-							</p>
-						</div>
-						<div class="transaction" id="2">
-							<p class="transaction-name">
-								<i class="fas fa-hamburger"></i> Food
-							</p>
-							<p class="transaction-amount">
-								-$100
-								<button class="delete"><i class="fas fa-times"></i></button>
-							</p>
-						</div>
-						<div class="transaction" id="3">
-							<p class="transaction-name">
-								<i class="fas fa-film"></i> Enterteiment
-							</p>
-							<p class="transaction-amount">
-								-$10
-								<button class="delete"><i class="fas fa-times"></i></button>
-							</p>
-						</div>
-						<div class="transaction" id="4">
-							<p class="transaction-name">
-								<i class="fa-solid fa-question"></i> Other
-							</p>
-							<p class="transaction-amount">
-								-$10
-								<button class="delete"><i class="fas fa-times"></i></button>
-							</p>
-						</div>
 					</div>
 				</div>
 			</section>
@@ -115,7 +79,7 @@
 
 			<label for="category">Select category</label>
 			<small> ( [ + ] means income, [ - ] means expense)</small>
-			<select id="category">
+			<select id="category" onchange="selectCategory()">
 				<option value="none" selected disabled></option>
 				<option value="income">[ + ] income</option>
 				<option value="shopping">[ - ] shopping</option>
